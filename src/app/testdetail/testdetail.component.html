@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-md-12 col-sm-12">
+    <div class="row">
+      <div class="col-md-12">
+        <mz-select-container>
+          <select mz-select
+            id="options-select"
+            [(ngModel)]="rowsOnPage"
+          >
+              <option [ngValue]="5">5</option>
+              <option [ngValue]="10">10</option>
+              <option [ngValue]="15">15</option>
+          </select>
+        </mz-select-container>
+
+        <table class="highlight table  mt-2">
+          <thead>
+            <tr>
+              <th class="mt-2">Preguntas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let detail of testDetail">
+              <td style="cursor:pointer">{{detail.title_question}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-12">
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="">
+<p><b>{{testTotalQuestion}}</b> Preguntas</p>
+</div>
+
+
+
+<!-- {{filter}} -->
+<a class="btn waves-effect waves-light" (click)="comenzar()">Comenzar</a>
+<a class="btn waves-effect waves-light" (click)="atras()">Atras</a>

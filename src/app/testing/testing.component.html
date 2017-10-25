@@ -1,0 +1,23 @@
+<div class="" *ngIf="!prueba">
+  <div class="row">
+    <div class="input-field col-md-12">
+      <input placeholder="Buscar Test" id="search" type="search" [(ngModel)]="filterQuery" #name="ngModel" name="search" (keyup)="searchTest()" required>
+    </div>
+    <div  class="col-md-4" *ngFor="let test of testing | dataFilter: filterQuery | paginate: { itemsPerPage: 6, currentPage: p }">
+      <mz-card
+        [hoverable]="true">
+        <mz-card-title (click)="detailTest(test.id)" style="cursor:pointer">
+        {{test.title_test}}
+        </mz-card-title>
+        <mz-card-content>
+          {{test.description}}
+        </mz-card-content>
+        <mz-card-action>
+          <a class="btn waves-effect waves-light" (click)="detailTest(test.id)">Presentar Test</a>
+        </mz-card-action>
+      </mz-card>
+    </div>
+  </div>
+  <pagination-controls previousLabel="Anterior" nextLabel="Siguiente" class="right" (pageChange)="p = $event"></pagination-controls>
+</div>
+  <app-testdetail [testTotalQuestion]="testTotalQuestion" [testDetail]="testDetail" [filter]="filter" (datos)="atras($event)"></app-testdetail>

@@ -1,0 +1,21 @@
+.card .card-content {
+    height:280px!important
+}
+
+mz-card-title {
+    color: #2eb2ff;
+    font-weight: 500
+}
+
+.btn, .btn-large {
+    color: white !important;
+    font-weight: 500;
+    background-color: #2eb2ff
+}
+
+
+mz-card-action, mz-card-action a{
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}

@@ -1,0 +1,25 @@
+nav {
+  background-color: #003463
+}
+nav ul a:hover, nav ul a:focus {
+  text-decoration:none;
+}
+
+.btn, .btn-large {
+    background-color: #2eb2ff;
+    /*background-color: #007bdd;*/
+    font-weight: 500;
+}
+
+
+
+a:focus, a:hover {
+    color: rgb(1, 76, 140);
+    text-decoration: underline;
+}
+
+@media (min-width:991px){
+  .menu-mobile{
+    display: none !important
+  }
+}

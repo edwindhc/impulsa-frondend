@@ -1,0 +1,52 @@
+<!-- <div class="row">
+  <div class="container">
+    <div class="l6 m6 s6">
+      <form #registerForm="ngForm" (ngSubmit)="onSubmit()">
+        <p>
+          <label for="">Nombre</label>
+          <input type="text" name="name" #name="ngModel" [(ngModel)]="user.name">
+          <span *ngIf="!name.valid && name.touched"> Nombre Requerido</span>
+        </p>
+        <p>
+          <label for="">Email</label>
+          <input type="text" name="email" #email="ngModel" [(ngModel)]="user.email">
+        </p>
+        <p>
+          <label for="">Password</label>
+          <input type="password" name="password" #password="ngModel" [(ngModel)]="user.password">
+        </p>
+
+        <button type="submit" [disabled]="!registerForm.form.valid">Registrar</button>
+      </form>
+    </div>
+  </div>
+</div> -->
+
+
+
+<div class="row">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 mt-5">
+        <form #registerForm="ngForm" (ngSubmit)="onSubmit()" materialize>
+          <div class="input-field">
+            <i class="material-icons prefix mt-2">person</i>
+            <input materialize="tooltip" data-position="bottom" data-tooltip="El nombre es requerido" class="form-control tooltipped" type="text" name="name" [ngClass]="{'invalid': name.invalid  && name.touched }" #name="ngModel" [(ngModel)]="user.name" required>
+            <label for="email">Name</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix mt-2">email</i>
+            <input materialize="tooltip" data-position="bottom" data-tooltip="Email is required" class="form-control tooltipped" type="text" name="email" [ngClass]="{'invalid': email.invalid  && email.touched }" #email="ngModel" [(ngModel)]="user.email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>
+            <label for="email">Email address</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix mt-2">lock</i>
+            <input type="password" name="password" #password="ngModel" [(ngModel)]="user.password">
+            <label for="email">Contraseña</label>
+          </div>
+          <button class="waves-effect waves-light btn" type="submit" [disabled]="!registerForm.form.valid">Registrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

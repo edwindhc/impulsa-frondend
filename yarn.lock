@@ -91,6 +91,12 @@
   dependencies:
     tslib "^1.7.1"
 
+"@angular/common@^4.3.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@angular/common/-/common-4.4.5.tgz#bd5179dc922adbf4c3ea6dfb19e73cb849ffdc37"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/compiler-cli@^4.2.4":
   version "4.4.4"
   resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-4.4.4.tgz#063080a497d9175396825050222c717da184f6cf"
@@ -105,9 +111,21 @@
   dependencies:
     tslib "^1.7.1"
 
+"@angular/compiler@^4.3.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-4.4.5.tgz#8721a5910f2bb52f09e2d404cad264f35ede5902"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/core@^4.2.4":
   version "4.4.4"
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-4.4.4.tgz#bd37ecf54158f97489996c9386bd222f80a32f5c"
+  dependencies:
+    tslib "^1.7.1"
+
+"@angular/core@^4.3.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-4.4.5.tgz#54acbcbda11719f883c786a906974abeb132f1a0"
   dependencies:
     tslib "^1.7.1"
 
@@ -117,9 +135,21 @@
   dependencies:
     tslib "^1.7.1"
 
+"@angular/forms@^4.3.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-4.4.5.tgz#e9552086232aab2ce1d08ef198b62204ea13c43b"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/http@^4.2.4":
   version "4.4.4"
   resolved "https://registry.yarnpkg.com/@angular/http/-/http-4.4.4.tgz#667faf616bb624168eafae6ee92e5eba23a9d1f2"
+  dependencies:
+    tslib "^1.7.1"
+
+"@angular/http@^4.3.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@angular/http/-/http-4.4.5.tgz#2c735ed842401fc2356419268e288dcf2396e84f"
   dependencies:
     tslib "^1.7.1"
 
@@ -133,15 +163,33 @@
   dependencies:
     tslib "^1.7.1"
 
+"@angular/platform-browser-dynamic@^4.3.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-4.4.5.tgz#774dbdc1d90f775dbf1e319f6ed42b260623b61f"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/platform-browser@^4.2.4":
   version "4.4.4"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-4.4.4.tgz#a3898e2e7ba9d84ffa0d47144c6971179c75aee6"
   dependencies:
     tslib "^1.7.1"
 
+"@angular/platform-browser@^4.3.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-4.4.5.tgz#74eb91c0b758126f26d53ee56c7cf4668bd9cac5"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/router@^4.2.4":
   version "4.4.4"
   resolved "https://registry.yarnpkg.com/@angular/router/-/router-4.4.4.tgz#7be391096e843cb3e04f9f05d1d65a88df9bc7cf"
+  dependencies:
+    tslib "^1.7.1"
+
+"@angular/router@^4.3.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@angular/router/-/router-4.4.5.tgz#f73130cf487d9a32cc1988afda59665f44a28a89"
   dependencies:
     tslib "^1.7.1"
 
@@ -177,9 +225,26 @@
   dependencies:
     "@types/jasmine" "*"
 
+"@types/jquery@*", "@types/jquery@^3.2.12":
+  version "3.2.15"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.2.15.tgz#3f620a9f5a0b296866f4bc729825226d0a35fba6"
+
+"@types/materialize-css@^0.100.0":
+  version "0.100.0"
+  resolved "https://registry.yarnpkg.com/@types/materialize-css/-/materialize-css-0.100.0.tgz#2b311b2ca273d6fd689609ab8e8d932966f8f45c"
+  dependencies:
+    "@types/jquery" "*"
+    "@types/pickadate" "*"
+
 "@types/node@^6.0.46", "@types/node@~6.0.60":
   version "6.0.89"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.89.tgz#154be0e6a823760cd6083aa8c48f952e2e63e0b0"
+
+"@types/pickadate@*":
+  version "3.5.31"
+  resolved "https://registry.yarnpkg.com/@types/pickadate/-/pickadate-3.5.31.tgz#b5d0c1b0f2b07653d41fded4aad2e86346a4247c"
+  dependencies:
+    "@types/jquery" "*"
 
 "@types/q@^0.0.32":
   version "0.0.32"
@@ -275,6 +340,32 @@ alphanum-sort@^1.0.1, alphanum-sort@^1.0.2:
 amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
+
+angular2-datatable@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/angular2-datatable/-/angular2-datatable-0.6.0.tgz#ca008f74087f0cb87da5709ed2f2d1d061772632"
+  dependencies:
+    lodash "^4.0.0"
+
+angular2-materialize@^15.1.10:
+  version "15.1.10"
+  resolved "https://registry.yarnpkg.com/angular2-materialize/-/angular2-materialize-15.1.10.tgz#775ecb4a0b39b5789e3a400e60c67bc48c8534df"
+
+angular4-carousel@^3.1.8:
+  version "3.1.8"
+  resolved "https://registry.yarnpkg.com/angular4-carousel/-/angular4-carousel-3.1.8.tgz#1ef640829af10a4b5f1a51f143a4c11bbaf20126"
+  dependencies:
+    "@angular/common" "^4.3.5"
+    "@angular/compiler" "^4.3.5"
+    "@angular/core" "^4.3.5"
+    "@angular/forms" "^4.3.5"
+    "@angular/http" "^4.3.5"
+    "@angular/platform-browser" "^4.3.5"
+    "@angular/platform-browser-dynamic" "^4.3.5"
+    "@angular/router" "^4.3.5"
+    core-js "^2.5.0"
+    rxjs "^5.4.3"
+    zone.js "^0.8.16"
 
 ansi-escapes@^3.0.0:
   version "3.0.0"
@@ -657,6 +748,13 @@ boom@5.x.x:
   resolved "https://registry.yarnpkg.com/boom/-/boom-5.2.0.tgz#5dd9da6ee3a5f302077436290cb717d3f4a54e02"
   dependencies:
     hoek "4.x.x"
+
+bootstrap@4.0.0-alpha.6:
+  version "4.0.0-alpha.6"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.0.0-alpha.6.tgz#4f54dd33ac0deac3b28407bc2df7ec608869c9c8"
+  dependencies:
+    jquery ">=1.9.1"
+    tether "^1.4.0"
 
 brace-expansion@^1.1.7:
   version "1.1.8"
@@ -1095,7 +1193,7 @@ cookie@0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.3.1.tgz#e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb"
 
-core-js@^2.2.0, core-js@^2.4.0, core-js@^2.4.1:
+core-js@^2.2.0, core-js@^2.4.0, core-js@^2.4.1, core-js@^2.5.0:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.1.tgz#ae6874dc66937789b80754ff5428df66819ca50b"
 
@@ -2180,6 +2278,10 @@ graceful-fs@^4.1.2, graceful-fs@^4.1.6:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
+hammerjs@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/hammerjs/-/hammerjs-2.0.8.tgz#04ef77862cff2bb79d30f7692095930222bf60f1"
+
 handle-thing@^1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/handle-thing/-/handle-thing-1.2.5.tgz#fd7aad726bf1a5fd16dfc29b2f7a6601d27139c4"
@@ -2848,6 +2950,14 @@ jasminewd2@^2.1.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/jasminewd2/-/jasminewd2-2.2.0.tgz#e37cf0b17f199cce23bea71b2039395246b4ec4e"
 
+jquery@>=1.9.1, "jquery@^3.0.0 || ^2.1.4":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
+
+jquery@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-2.2.4.tgz#2c89d6889b5eac522a7eea32c14521559c6cbf02"
+
 js-base64@^2.1.5, js-base64@^2.1.8, js-base64@^2.1.9:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.3.2.tgz#a79a923666372b580f8e27f51845c6f7e8fbfbaf"
@@ -3214,6 +3324,13 @@ matcher-collection@^1.0.0:
   dependencies:
     minimatch "^3.0.2"
 
+materialize-css@^0.100.2:
+  version "0.100.2"
+  resolved "https://registry.yarnpkg.com/materialize-css/-/materialize-css-0.100.2.tgz#9ca32b24904c9a04491fc7d0a2e9402e7b1dae07"
+  dependencies:
+    hammerjs "^2.0.8"
+    jquery "^3.0.0 || ^2.1.4"
+
 math-expression-evaluator@^1.2.14:
   version "1.2.17"
   resolved "https://registry.yarnpkg.com/math-expression-evaluator/-/math-expression-evaluator-1.2.17.tgz#de819fdbcd84dccd8fae59c6aeb79615b9d266ac"
@@ -3391,6 +3508,18 @@ ncname@1.0.x:
 negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
+
+ng2-materialize@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/ng2-materialize/-/ng2-materialize-1.6.0.tgz#42d2e020755525419b076f7e7776907c1fe7ffcb"
+  dependencies:
+    "@types/jquery" "^3.2.12"
+    "@types/materialize-css" "^0.100.0"
+    materialize-css "^0.100.2"
+
+ngx-pagination@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/ngx-pagination/-/ngx-pagination-3.0.1.tgz#5a8000e40c0424d9c41c9d6d592562e1547abf24"
 
 no-case@^2.2.0:
   version "2.3.2"
@@ -4590,7 +4719,7 @@ rx-lite@*, rx-lite@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/rx-lite/-/rx-lite-4.0.8.tgz#0b1e11af8bc44836f04a6407e92da42467b79444"
 
-rxjs@^5.4.2:
+rxjs@^5.4.2, rxjs@^5.4.3:
   version "5.4.3"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.4.3.tgz#0758cddee6033d68e0fd53676f0f3596ce3d483f"
   dependencies:
@@ -5128,6 +5257,10 @@ svgo@^0.7.0:
     sax "~1.2.1"
     whet.extend "~0.9.9"
 
+sweetalert2@^6.11.0:
+  version "6.11.0"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-6.11.0.tgz#a0cb1cf4661a711467b028b54026384d74851ea7"
+
 symbol-observable@^1.0.1:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.0.4.tgz#29bf615d4aa7121bdd898b22d4b3f9bc4e2aa03d"
@@ -5163,6 +5296,10 @@ temp@0.8.3:
   dependencies:
     os-tmpdir "^1.0.0"
     rimraf "~2.2.6"
+
+tether@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/tether/-/tether-1.4.0.tgz#0f9fa171f75bf58485d8149e94799d7ae74d1c1a"
 
 through@X.X.X, through@^2.3.6:
   version "2.3.8"
@@ -5831,6 +5968,6 @@ yn@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/yn/-/yn-2.0.0.tgz#e5adabc8acf408f6385fc76495684c88e6af689a"
 
-zone.js@^0.8.14:
+zone.js@^0.8.14, zone.js@^0.8.16:
   version "0.8.18"
   resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.18.tgz#8cecb3977fcd1b3090562ff4570e2847e752b48d"

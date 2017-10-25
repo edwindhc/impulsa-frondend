@@ -1,0 +1,59 @@
+<nav>
+  <div class="container">
+    <div class="nav-wrapper" materialize="collapsible">
+      <a href="#!" class="brand-logo"><img class="" src="assets/Logo.png" style="width:100%" alt="" style="width:150px"></a>
+      <a [id]="'btn-sidenav-demo'" materialize="sideNav" href="#" data-activates="mobile-demo" class="button-collapse menu-mobile"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a routerLink="/">Inicio</a></li>
+        <li><a routerLink="/test">Pruebas</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+
+        <mz-dropdown *ngIf="identity"
+  [id]="'dropdown-demo'"
+  [align]="'left'"
+  [belowOrigin]="false"
+  [constrainWidth]="true"
+  [dropdownButtonId]="'btn-dropdown-demo'"
+  [gutter]="true"
+  [hover]="false"
+  [inDuration]="300"
+  [outDuration]="300"
+  [stopPropagation]="true"
+>
+  <mz-dropdown-item *ngIf="isAdmin && identity"><a href="#!">Panel Administrativo</a></mz-dropdown-item>
+  <mz-dropdown-item><a href="#!">Perfil</a></mz-dropdown-item>
+  <mz-dropdown-item><a href="#!" (click)="logout()">Desconectarse</a></mz-dropdown-item>
+</mz-dropdown>
+<li materialize *ngIf="identity"><a mz-button id="btn-dropdown-demo" href="#">OPciones</a></li>
+<li *ngIf="!identity"><a routerLink="/login" mz-button>Ingresar</a></li>
+
+
+      </ul>
+
+
+      <mz-sidenav
+  [id]="'sidenav-demo'"
+  [collapseButtonId]="'btn-sidenav-demo'">
+  <mz-sidenav-header>
+    Sidenav header
+  </mz-sidenav-header>
+  <mz-sidenav-subheader>Link Subheader</mz-sidenav-subheader>
+  <mz-sidenav-link>
+    <a href="#">First Link</a>
+  </mz-sidenav-link>
+  <mz-sidenav-divider></mz-sidenav-divider>
+  <mz-sidenav-link [active]="true">
+    <a href="#">Active Link</a>
+  </mz-sidenav-link>
+  <mz-sidenav-divider></mz-sidenav-divider>
+  <mz-sidenav-link>
+    <a href="#" class="waves-effect">Second Link With Waves</a>
+  </mz-sidenav-link>
+</mz-sidenav>
+
+    </div>
+
+
+
+  </div>
+</nav>

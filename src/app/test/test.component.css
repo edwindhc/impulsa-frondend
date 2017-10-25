@@ -1,0 +1,10 @@
+.highlight td:hover {
+  background-color: #2eb2ff !important;
+  color: white;
+  font-weight: 500;
+}
+.active{
+  background-color: #2eb2ff;
+  color: white;
+  font-weight: 500
+}

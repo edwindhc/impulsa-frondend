@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+.page-item.active .page-link {
+    z-index: 2;
+    color: #fff;
+    background-color: #2eb2ff !important;
+    border-color: #2eb2ff !important;
+}
+
+.input-field .prefix.active, .input-field label.active, .input-field  {
+  color:#003463 !important
+}
+
+input{
+  font-weight: 500
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]){
+  border-bottom: 1px solid #003463 !important;
+  box-shadow: 0 1px 0 0 #003463 !important
+}
+.card .card-content {
+    height:280px!important
+}

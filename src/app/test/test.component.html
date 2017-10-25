@@ -1,0 +1,76 @@
+<div class="row">
+  <div class="col-md-12 col-sm-12">
+    <div class="row">
+      <div class="col-md-4">
+        <mz-select-container>
+          <select mz-select
+            id="options-select"
+            [(ngModel)]="rowsOnPage"
+          >
+              <option [ngValue]="5">5</option>
+              <option [ngValue]="10">10</option>
+              <option [ngValue]="15">15</option>
+          </select>
+        </mz-select-container>
+
+        <table class="highlight table table-striped  mt-2" #mf="mfDataTable" [mfData]="data | dataFilter: filterQuery" [mfRowsOnPage]="rowsOnPage" [(mfSortBy)]="sortBy" [(mfSortBy)]="sortOrder">
+          <thead>
+            <tr>
+              <th class="mt-2"><mfDefaultSorter by="title">Categorias</mfDefaultSorter></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let category of mf.data">
+              <td style="cursor:pointer" (click)="send(category.title)" [ngClass]="{'active': category.title == filtro}">{{category.title}}</td>
+            </tr>
+          </tbody>
+          <tfoot>
+          <tr colspan="6" >
+              <mfBootstrapPaginator class="right mt-3"></mfBootstrapPaginator>
+          </tr>
+        </tfoot>
+        </table>
+      </div>
+      <div class="col-md-8">
+
+        <!-- Aqui va el componente -->
+        <app-testing [filterQuery]="filtro" (datos)="verFilter($event)"></app-testing>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="col-md-8 col-sm-8">
+  <div class="right input-field">
+  <i class="material-icons prefix search">search</i>
+  <i class="material-icons prefix clear-search" (click)="clearSearch(); search.focus()" [hidden]="filterQuery.length === 0">clear</i>
+  <input
+    type="text"
+    class="form-control"
+    [(ngModel)]="filterQuery"
+    name="filterQuery"
+    placeholder="Search product"
+    #search
+    id="filterQuery">
+</div>
+  <table class="table table-striped z-depth-3 mt-2" #mf="mfDataTable" [mfData]="data | dataFilter: filterQuery" [mfRowsOnPage]="rowsOnPage" [(mfSortBy)]="sortBy" [(mfSortBy)]="sortOrder">
+    <thead>
+      <tr>
+        <th><mfDefaultSorter by="title">Title</mfDefaultSorter></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let category of mf.data">
+        <td>{{category.title}}</td>
+      </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td colspan="6">
+        <mfBootstrapPaginator class="right"></mfBootstrapPaginator>
+      </td>
+    </tr>
+  </tfoot>
+  </table>
+</div> -->
